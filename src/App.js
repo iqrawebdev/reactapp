@@ -8,16 +8,24 @@ import Contact from './Contact';
 function App() {
 
   return (
+    <div style={{
+      display: "flex",
+      flexDirection: 'column',
+      minHeight: '100vh'
+    }}>
+
      <Router>
        <File />
+        <div style={{ flex: 1 }}>
+
            <Routes>
        <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
          <Route path="/contact" element={<Contact />} />
-      </Routes>
+      </Routes></div>
       <Footer/>
     </Router>
-
+</div>
 
   );
 }
