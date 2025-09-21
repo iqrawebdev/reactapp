@@ -1,38 +1,304 @@
-.App {
-  text-align: center;
+
+
+html {
+  scroll-behavior: smooth;padding-top: 100px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav {
+  background-color:snow;
+  padding: 35px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+ position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+}
+nav .nav-links {
+  display: flex;
+  gap: 35px; 
+  padding-right: 300px;
 }
 
-.App-link {
-  color: #61dafb;
+nav a {
+
+  text-decoration: none;
+  color: #333;
+  /* font-weight: bold; */
+  font-size: 16px;
+  transition: color 0.5s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav a:hover {
+  color:#FF7518 ;
 }
+
+nav h2{
+  color:black;
+  margin: 0;
+}
+.home-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 100px;
+  background-color:#FFF0E6;
+}
+.home-content {
+  flex: 1;
+}
+
+.tagline {
+  color:#FF7518;
+   font-weight: bold;
+  font-size: 14px;
+  display: inline-block;
+  
+
+ 
+}
+
+.home-content h1 {
+  font-size: 53px;
+  font-weight: bold;
+  line-height: 1.2;
+  color: #111;
+  margin-bottom: 20px;
+}
+.highlight {
+  color:#FF7518;
+}
+
+.home-content p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  max-width: 500px;
+}
+
+
+.home-image {
+  flex: 1.2;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.home-image img {
+  max-width: 450px;
+  height: auto;
+}
+.services-section {
+   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 40px 20px;
+  max-width: 900px;   /* isko 1200 se kam kar dein for tighter layout */
+  margin: 0 auto;  
+}
+
+.service-card {
+  width: 200px;height: 250px;
+  background:none;
+  border-radius: 10px;
+   border: 2px solid #FFF0E6; 
+  padding: 25px;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  background-color:#FFF0E6 ;
+}
+
+.service-card i {
+  font-size: 30px;
+  color: #FF7518;
+  margin-bottom: 15px;
+}
+
+.service-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.service-card p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
+
+.projects-section {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #FFF0E6;
+}
+
+.section-title {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.project-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  padding: 20px;
+  transition: 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-img {
+  width: 100%;height: 250px;   image-rendering: -webkit-optimize-contrast;
+ image-rendering: crisp-edges;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.project-card h3 {
+  font-size: 20px;
+  color: #111;
+}
+
+.project-card p {
+  font-size: 15px;
+  color: #444;
+  margin: 10px 0;
+}
+
+.tech-used {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 13px;
+  color: #ff7518;
+  font-weight: bold;
+}
+.section-title {
+  text-align: center;
+  font-size: 36px;
+  color: #111;
+  margin-bottom: 20px;
+}
+
+.paragraph {
+ max-width: 750px;
+  margin: 0 auto;
+  text-align: justify;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #444;
+padding: 0 20px;
+}
+
+
+.footer {
+  background: #111;
+  color: #fff;
+  padding: 60px 20px 30px;
+  font-family: sans-serif; 
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-column {
+  flex: 1 1 250px;
+}
+
+.footer-logo {
+  font-size: 24px;
+  color: #ff7518;
+ margin-bottom: 15px;
+}
+
+.footer-email {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.footer-column h3 {
+  color: #ff7518;
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column li {
+  margin-bottom: 10px;
+}
+.footer-column li:hover{
+  color:#ff7518
+}
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin: 10px 0;
+}
+
+.social-icons i {
+  background: #ff7518;
+  color: #fff;
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.social-icons  :hover{color:#ff7518;}
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #333;
+  padding-top: 20px;
+  font-size: 14px;
+  margin-top: 30px;
+  color: #bbb;
+}
+
+#home,
+#about,
+#services,
+#projects,
+#contact {
+  scroll-margin-top: 120px; /* jitni tumhare header ki height ho */
+}
+
+.footer a {
+  text-decoration: none; /* removes underline */
+  color: #fff; /* or jo bhi color chahaye */
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #ff7518; /* hover color */
+  text-decoration: underline; /* optional */
+}
+
+
+
+

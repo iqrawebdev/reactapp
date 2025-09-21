@@ -1,81 +1,55 @@
 
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import profileImg from './images/img4.webp'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {  faUserCircle } from '@fortawesome/free-solid-svg-icons';
+
+
 function About() {
-     const [users, setUsers] = useState([]);
-//   const [loading, setLoading] = useState(true);
+  return(
+    <section id="about" style={{ padding: '20px 0' }}>
+  <div
+    className="home-section"
+    style={{
+      background: "none",
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      padding: '40px 100px',
+      gap: '50px',
+      flexWrap: 'wrap' 
+    }}
+  >
+    <div
+      style={{
+        flex: 1.2,
+        display: 'flex',
+ justifyContent: 'center'
+      }}
+    >
+      <img
+        src={profileImg}
+        alt="Profile"
+        style={{
+          maxWidth: '600px',
+          width: '100%',
+          height: '400px',
+          objectFit:"cover"
+        }}
+      />
+    </div>
+    <div className="home-content" style={{ flex: 1 }}>
+      <span className="tagline" style={{ display: 'inline-block', marginBottom: '10px' }}><FontAwesomeIcon icon={faUserCircle} style={{ marginRight: '10px', color: '#FF7518' }} />
+        About Me
+      </span>
+      <h1>Bringing Ideas to Life Through Code & Design</h1>
+      <p style={{ textAlign: 'justify' }}>
+        I'm a passionate and detail-oriented web developer with experience in designing and developing responsive websites and web applications. I specialize in crafting clean UI/UX designs and turning them into functional and high-performing web solutions. My aim is to deliver user-friendly digital experiences that not only look great but also perform exceptionally.
+      </p>
+    </div>
+  </div>
+</section>
 
-  useEffect(() => {
-    fetch('https://jsonplaceholder.typicode.com/users') // dummy API
-      .then(response => response.json())
-      .then(data => {
-        setUsers(data);
-        // setLoading(false);
-      });
-  }, []);
-    return (
-        <div style={{ fontFamily: "Arial, sans-serif" }}>
-            
-            <main style={{ padding: "40px", minHeight: "60vh", textAlign: "center" }}>
-                <h2>Users</h2>
-      {/* {/* {loading ? (
-        <p>Loading...</p>
-      ) :    */}
-
-        <ul>
-          {users.map(user => (
-            <li key={user.id}>UserName:{user.name}<br/>
-           UserAddress: {user.address.city}<br/>
-           UserEmail: {user.email}</li>
-          ))}
-        </ul>
-          {/* )} */}
-
-
-                <h2>Our Mission</h2>
-                <p>
-                    Our mission is to bridge the gap between technology and people by
-        creating solutions that are reliable, scalable, and user-friendly. We
-        aim to transform ideas into impactful products.
-                </p>
-                <h2>Our Mission</h2>
-                <p>
-                    Our mission is to bridge the gap between technology and people by
-        creating solutions that are reliable, scalable, and user-friendly. We
-        aim to transform ideas into impactful products.
-                </p>
-                 <h2>Our Mission</h2>
-                <p>
-                    Our mission is to bridge the gap between technology and people by
-        creating solutions that are reliable, scalable, and user-friendly. We
-        aim to transform ideas into impactful products.
-                </p>
-                <h2>Our Mission</h2>
-                <p>
-                    Our mission is to bridge the gap between technology and people by
-        creating solutions that are reliable, scalable, and user-friendly. We
-        aim to transform ideas into impactful products.
-                </p>
-                 <h2>Our Mission</h2>
-                <p>
-                    Our mission is to bridge the gap between technology and people by
-        creating solutions that are reliable, scalable, and user-friendly. We
-        aim to transform ideas into impactful products.
-                </p>
-                 <h2>Our Mission</h2>
-                <p>
-                    Our mission is to bridge the gap between technology and people by
-        creating solutions that are reliable, scalable, and user-friendly. We
-        aim to transform ideas into impactful products.
-                </p>
-                 <h2>Our Mission</h2>
-                <p>
-                    Our mission is to bridge the gap between technology and people by
-        creating solutions that are reliable, scalable, and user-friendly. We
-        aim to transform ideas into impactful products.
-                </p>
-            </main>
-
-        </div>
-    )
+  )
 }
 export default About;
