@@ -16,11 +16,11 @@ function Service(){
         <FontAwesomeIcon icon={faTools} style={{ marginRight: '10px', color: '#FF7518' }} />
         My Experties
       </h1>
-      <h1 style={{ fontSize: "45px" }}>Services I Offer</h1>
-      <p>I’m a passionate Web Developer with experience in:</p>
+      <h1 style={{ fontSize: "45px" }}>SERVICES I OFFER</h1>
+      {/* <p>I’m a passionate Web Developer with experience in:</p> */}
     </div>
 
-    <div className="services-section">
+    <div className="services-section" style={{marginTop:"-40px"}}>
       <div className="service-card">
         <FaLaptopCode size={40} color="#FF7518" />
         <h3>Responsive Website Design</h3>

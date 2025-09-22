@@ -6,15 +6,17 @@ import About from './About';
 import Service from './Service';
 import Project from './Projects';
 import Footer from './Footer'
+import Details from './Details';
 function Portfolio(){
 
   return(
     <div>
     <File />
      <Content />
-     <About/>
+     <About/><br/><br/>
      <Service/>
      <Project/><br/><br/>
+     <Details/><br/>
      <Footer/>
     </div>
   )

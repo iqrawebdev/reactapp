@@ -18,6 +18,12 @@ function Content(){
           I specialize in building modern, responsive, and user-friendly websites that help businesses grow online.
           From clean UI/UX design to fully functional web solutions, I deliver quality with creativity.
         </p>
+        <button onClick={() => {
+  document.getElementById("projects").scrollIntoView({ behavior: "smooth" });
+}}>
+  View Projects
+</button>
+
  </div>
       <div className="home-image">
         <img src={profileImg} alt="Profile" />

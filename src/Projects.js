@@ -10,7 +10,7 @@ function Project(){
       <section id="projects">
         <div>
 <section className="projects-section">
-      <h2 className="section-title">My Projects</h2>
+      <h2 className="section-title">MY PROJECTS</h2>
       <p className='paragraph' >I have created several web development projects using React, JavaScript, and CSS, such as a responsive portfolio website, a  to-do list app,  a complete e-commerce store, a secure login form, and a high-conversion landing page.I build clean, scalable, and modern websites that deliver great user experiences.</p><br/><br/>
       <div className="projects-grid">
         
