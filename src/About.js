@@ -90,7 +90,7 @@ function About() {
            <button onClick={() => {
   document.getElementById("details").scrollIntoView({ behavior: "smooth" });
 }}>
-  View Projects
+  View Details
 </button>
         </div>
       </div>

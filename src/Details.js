@@ -1,7 +1,7 @@
 import React from 'react';
 function Details(){
     return(
-        <section id='details'>
+        <section id='details' style={{ padding: '20px 0' }}>
        <div className="info-section">
   <h2 style={{ fontSize: "42px" }}>MY JOURNEY</h2>
   <div className="cards-container">

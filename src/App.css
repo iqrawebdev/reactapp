@@ -393,3 +393,120 @@ button:hover {
   color: #555;
   margin-top: 5px;
 }
+ 
+
+
+@media (max-width: 1024px) {
+  nav .nav-links {
+    padding-right: 100px;
+    gap: 20px;
+  }
+  .home-section {
+    padding: 50px 40px;
+  }
+  .home-content h1 {
+    font-size: 42px;
+  }
+  .home-image img {
+    max-width: 350px;
+  }
+}
+
+/* Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+  nav {
+    padding: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  nav .nav-links {
+    padding-right: 0;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+
+  .home-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  .home-content {
+    margin-bottom: 20px;
+  }
+  .home-content h1 {
+    font-size: 36px;
+  }
+  .home-image {
+    justify-content: center;
+  }
+  .home-image img {
+    max-width: 300px;
+  }
+
+  .services-section {
+    grid-template-columns: 1fr 1fr; /* 2 cards per row */
+    gap: 20px;
+    padding: 30px 15px;
+  }
+  .service-card {
+    width: 100%;
+    height: auto;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr; /* single column */
+    gap: 20px;
+    padding: 0 15px;
+  }
+
+  .cards-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 25px;
+  }
+  .social-icons {
+    justify-content: center;
+  }
+}
+
+/* Small Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+  nav h2 {
+    font-size: 20px;
+  }
+  nav a {
+    font-size: 14px;
+  }
+
+  .home-content h1 {
+    font-size: 28px;
+  }
+  .home-content p {
+    font-size: 14px;
+  }
+  button {
+    width: 160px;
+    font-size: 16px;
+  }
+
+  .service-card h3 {
+    font-size: 16px;
+  }
+  .service-card p {
+    font-size: 13px;
+  }
+
+  .project-card h3 {
+    font-size: 18px;
+  }
+  .project-card p {
+    font-size: 14px;
+  }
+}
+
