@@ -1,476 +1,98 @@
-html {
-  scroll-behavior: smooth;
-  /* padding-top: 100px; */
-}
-
-/* ===================== NAV ===================== */
-nav {
-  background-color: snow;
-  padding: 35px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-nav .nav-links {
-  display: flex;
-  gap: 35px;
-  padding-right: 300px;
-}
-
-nav a {
-  text-decoration: none;
-  color: #333;
-  font-size: 16px;
-  transition: color 0.5s;
-}
-
-nav a:hover {
-  color: #FF7518;
-}
-
-nav h2 {
-  color: black;
-  margin: 0;
-}
-
-/* ===================== HOME ===================== */
-.home-section {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 60px 100px;
-  background-color: #FFF0E6;
-    margin-top: 100px;
-}
-
-.home-content {
-  flex: 1;
-}
-
-.tagline {
-  color: #FF7518;
-  font-weight: bold;
-  font-size: 14px;
-  display: inline-block;
-}
-
-.home-content h1 {
-  font-size: 53px;
-  font-weight: bold;
-  line-height: 1.2;
-  color: #111;
-  margin-bottom: 20px;
-}
-
-.highlight {
-  color: #FF7518;
-}
-
-.home-content p {
-  font-size: 16px;
-  color: #333;
-  line-height: 1.6;
-  margin-bottom: 30px;
-  max-width: 500px;
-}
-
-.home-image {
-  flex: 1.2;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.home-image img {
-  max-width: 450px;
-  height: auto;
-}
-
-/* ===================== SERVICES ===================== */
-.services-section {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
-  padding: 40px 20px;
-  max-width: 1020px; /* tighter layout */
-  margin: 0 auto;
-}
-
-.service-card {
-  /* width: 100%;
-  /* height: auto; */
-  
-    width: 100%;          
-  max-width: 280px;     
-  height: 200px;        
-
-
-  background: none;
-  border-radius: 10px;
-  border: 2px solid #FFF0E6;
-  padding: 25px;
-  text-align: center;
-  transition: 0.3s ease;
-}
-
-.service-card:hover {
-  transform: translateY(-5px);
-  background-color: #FFF0E6;
-}
-
-.service-card i {
-  font-size: 30px;
-  color: #FF7518;
-  margin-bottom: 15px;
-}
-
-.service-card h3 {
-  font-size: 18px;
-  margin-bottom: 10px;
-  color: #333;
-}
-
-.service-card p {
-  font-size: 14px;
-  color: #555;
-  line-height: 1.6;
-}
-
-/* ===================== PROJECTS ===================== */
-.projects-section {
-  padding: 60px 20px;
-  text-align: center;
-  background-color: #FFF0E6;
-}
-
-.section-title {
-  text-align: center;
-  font-size: 36px;
-  color: #111;
-  margin-bottom: 20px;
-}
-
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 25px;
-  max-width: 1200px;
-  margin: auto;
-}
-
-.project-card {
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  transition: 0.3s ease;
-}
-
-.project-card:hover {
-  transform: translateY(-5px);
-}
-
-.project-img {
-
-  width: 100%;        /* card ki width ke hisaab se expand ho */
-  height: 200px;      /* sab images equal height */
-  object-fit: cover;  /* image crop hoke fit ho jaye */
-  border-radius: 8px;
-  margin-bottom: 15px;
-}
-
-
-.project-card h3 {
-  font-size: 20px;
-  color: #111;
-}
-
-.project-card p {
-  font-size: 15px;
-  color: #444;
-  margin: 10px 0;
-}
-
-.tech-used {
-  display: inline-block;
-  margin-top: 8px;
-  font-size: 13px;
-  color: #FF7518;
-  font-weight: bold;
-}
-
-/* ===================== PARAGRAPH ===================== */
-.paragraph {
-  max-width: 750px;
-  margin: 0 auto;
-  text-align: justify;
-  font-size: 16px;
-  line-height: 1.8;
-  color: #444;
-  padding: 0 20px;
-}
-
-/* ===================== FOOTER ===================== */
-.footer {
-  background: #111;
-  color: #fff;
-  padding: 60px 20px 30px;
-  font-family: sans-serif;
-}
-
-.footer-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 40px;
-  max-width: 1200px;
-  margin: auto;
-}
-
-.footer-column {
-  flex: 1 1 250px;
-}
-
-.footer-logo {
-  font-size: 24px;
-  color: #FF7518;
-  margin-bottom: 15px;
-}
-
-.footer-email {
-  margin-top: 15px;
-  font-weight: bold;
-}
-
-.footer-column h3 {
-  color: #FF7518;
-  margin-bottom: 10px;
-}
-
-.footer-column ul {
-  list-style: none;
-  padding: 0;
-}
-
-.footer-column li {
-  margin-bottom: 10px;
-}
-
-.footer-column li:hover {
-  color: #FF7518;
-}
-
-.social-icons {
-  display: flex;
-  gap: 15px;
-  margin: 10px 0;
-}
-
-.social-icons i {
-  background: #FF7518;
-  color: #fff;
-  padding: 8px;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.social-icons :hover {
-  color: #FF7518;
-}
-
-.footer-bottom {
-  text-align: center;
-  border-top: 1px solid #333;
-  padding-top: 20px;
-  font-size: 14px;
-  margin-top: 30px;
-  color: #bbb;
-}
-
-.footer a {
-  text-decoration: none;
-  color: #fff;
-  transition: color 0.3s ease;
-}
-
-.footer a:hover {
-  color: #FF7518;
-  text-decoration: underline;
-}
-
-/* ===================== BUTTON ===================== */
-button {
-  padding: 10px 20px;
-  background-color: #FF7518;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  width: 200px;
-  height: 45px;
-  font-weight: bold;
-  font-size: 18px;
-  margin-left: 20px;
-}
-
-button:hover {
-  background-color: black;
-  color: #FF7518;
-}
-
-/* ===================== FEATURES ===================== */
-.features-wrapper {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-}
-
-.feature-item {
-  display: flex;
-  align-items: center;
-  background: #f9f9f9;
-  padding: 10px 15px;
-  border-radius: 5px;
-  font-size: 15px;
-  color: #333;
-  box-shadow: 0 0 5px rgba(0,0,0,0.05);
-}
-
-.icon {
-  color: #FF7518;
-  margin-right: 10px;
-}
-
-/* ===================== INFO & CARDS ===================== */
-.info-section {
-  padding: 40px;
-  background-color: white;
-  text-align: center;
-}
-
-.cards-container {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  margin-top: 30px;
-  flex-wrap: wrap;
-}
-
-.card {
-  background-color: none;
-  padding: 20px;
-  border-radius: 10px;
-  width: 320px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  border: 2px solid #FFF0E6;
-  text-align: center;
-  transition: 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  background-color: #FFF0E6;
-}
-
-.card h3 {
-  border-bottom: 2px solid #FF7518;
-  padding-bottom: 8px;
-  margin-bottom: 15px;
-  color: #FF7518;
-}
-
-.item {
-  margin-bottom: 20px;
-}
-
-.item h4 {
-  margin: 0;
-  color: #333;
-}
-
-.item p em {
-  color: #777;
-  font-style: normal;
-  font-weight: 600;
-}
-
-.item p {
-  font-size: 14px;
-  color: #555;
-  margin-top: 5px;
-}
-
-/* ===================== MEDIA QUERIES ===================== */
-@media (max-width: 1024px) {
-  nav .nav-links {
-    padding-right: 100px;
-    gap: 20px;
-  }
-  .home-section {
-    padding: 50px 40px;
-  }
-  .home-content h1 {
-    font-size: 42px;
-  }
-  .home-image img {
-    max-width: 350px;
-  }
-}
-
-@media (max-width: 768px) {
+/* ===================== MOBILE STYLES (up to 480px) ===================== */
+@media (max-width: 480px) {
+  /* NAVIGATION */
   nav {
     padding: 20px;
     flex-direction: column;
     align-items: flex-start;
   }
+  nav h2 { font-size: 20px; }
+  nav a { font-size: 14px; }
   nav .nav-links {
     padding-right: 0;
-    gap: 15px;
+    gap: 10px;
     flex-wrap: wrap;
     margin-top: 10px;
   }
+
+  /* HOME SECTION */
   .home-section {
     flex-direction: column;
     text-align: center;
-    padding: 40px 20px;
+    padding: 40px 15px;
   }
   .home-content {
     margin-bottom: 20px;
   }
-  .home-content h1 {
-    font-size: 36px;
-  }
+  .home-content h1 { font-size: 28px; }
+  .home-content p { font-size: 14px; }
   .home-image {
     justify-content: center;
   }
   .home-image img {
-    max-width: 300px;
+    max-width: 100%;
+    height: auto;
   }
+
+  /* BUTTON */
+  button {
+    width: 160px;
+    font-size: 16px;
+    margin-left: 0;
+  }
+
+  /* SERVICES */
   .services-section {
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    padding: 30px 15px;
+    grid-template-columns: 1fr;  /* single column mobile */
+    gap: 15px;
+    padding: 20px 10px;
+    justify-items: center;
   }
   .service-card {
     width: 100%;
+    max-width: 250px;
+    padding: 20px;
     height: auto;
   }
+  .service-card h3 { font-size: 16px; }
+  .service-card p { font-size: 13px; }
+  .service-card svg { width: 30px; height: 30px; }
+
+  /* PROJECTS */
   .projects-grid {
     grid-template-columns: 1fr;
     gap: 20px;
     padding: 0 15px;
   }
+  .project-img { height: 150px; }
+  .project-card h3 { font-size: 18px; }
+  .project-card p { font-size: 14px; }
+
+  /* CARDS / INFO */
   .cards-container {
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: 15px;
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
   }
+  .card {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  /* ABOUT IMAGE */
+  #about img {
+    height: 40%;
+    width: 100%;
+  }
+
+  /* FOOTER */
   .footer-container {
     flex-direction: column;
     text-align: center;
@@ -480,174 +102,3 @@ button:hover {
     justify-content: center;
   }
 }
-
-@media (max-width: 480px) {
-  nav h2 {
-    font-size: 20px;
-  }
-  nav a {
-    font-size: 14px;
-  }
-  .home-content h1 {
-    font-size: 28px;
-  }
-  .home-content p {
-    font-size: 14px;
-  }
-  button {
-    width: 160px;
-    font-size: 16px;
-  }
-  .service-card h3 {
-    font-size: 16px;
-  }
-  .service-card p {
-    font-size: 13px;
-  }
-  .project-card h3 {
-    font-size: 18px;
-  }
-  .project-card p {
-    font-size: 14px;
-  }
-}
-
-/* ===================== GLOBAL IMG ===================== */
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-.home-image img
-/* .project-img,
-.about-img */
- {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
-
-
-.footer-column { margin-left:0 }
-@media (min-width:1024px){
-  .footer-column { margin-left:40px; } /* optional for desktop */
-}
-.about-section { padding:40px 20px; }
-@media(min-width:1024px){ .about-section{ padding:40px 100px; } }
-
-#services, #about, #projects,#home {
-   scroll-margin-top: 100px;
-}
-
-@media (max-width: 768px) {
-  #about img {
-    height: 40%;   /* mobile pe choti height */
-    width: 100%;      /* mobile pe width adjust ho jaye */
-  }
-}
-
-/* Tablet view */
-@media (max-width: 768px) {
-  .services-section {
-    grid-template-columns: 1fr 1fr; /* 2 columns tablet pe */
-    gap: 20px;
-  }
-}
-
-/* Mobile view */
-@media (max-width: 480px) {
-  .services-section {
-    grid-template-columns: 1fr; /* single column mobile pe */
-    gap: 15px;
-  }
-}
-@media (max-width: 480px) {
-  .service-card h3 {
-    font-size: 16px;
-  }
-  .service-card p {
-    font-size: 13px;
-  }
-  .service-card svg {
-    width: 30px;
-    height: 30px;
-  }
-}
-@media (max-width: 768px) {
-  .project-img {
-    height: 180px;   /* tablet pe thodi choti height */
-  }
-}
-
-@media (max-width: 480px) {
-  .project-img {
-    height: 150px;   /* mobile pe aur choti height */
-  }
-}
-
-@media (max-width: 1024px) {
-  .cards-container {
-    flex-direction: column;   /* vertical stack */
-    align-items: center;      /* center align cards */
-    gap: 20px;
-    padding: 0 20px;          /* thodi side padding */
-  }
-}
-
-/* Tablet & Mobile adjustments for Details cards */
-@media (max-width: 1024px) {
-  .cards-container {
-    flex-direction: column; /* vertical stack */
-    align-items: center;    /* center align cards */
-    gap: 20px;
-    padding: 0 20px;        /* thodi side padding */
-  }
-
-  .card {
-    width: 100%;            /* full width container ke hisaab se */
-    max-width: 400px;       /* optional max width */
-    margin: 0 auto;         /* center cards horizontally */
-  }
-}
-
-
-@media (max-width: 480px) {
-  .cards-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;      /* horizontal center */
-    justify-content: center;  /* vertical center agar chahiye */
-    gap: 15px;
-    padding: 0;               /* remove extra left/right padding */
-    margin: 0 auto;           /* center container */
-    width: 100%;
-    box-sizing: border-box;
-  }
-
-  .card {
-    width: 100%;
-    max-width: 320px;
-    margin: 0 auto;           /* horizontal center */
-    box-sizing: border-box;   /* padding include ho jaye width me */
-  }
-}
-
-/* Mobile responsive for screens up to 480px */
-@media (max-width: 480px) {
-  .services-section {
-    padding: 20px 10px;
-    gap: 15px;
-    grid-template-columns: 1fr; /* single column */
-    justify-items: center;      /* ye cards ko horizontal center karega */
-  }
-
-  .service-card {
-    max-width: 250px; /* card width */
-    width: 100%;      /* ensure karta hai ke card grid ke andar fit ho */
-    padding: 20px;
-  }
-}
-
-
