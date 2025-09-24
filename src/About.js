@@ -8,7 +8,7 @@ function About() {
  
 
   return (
-    <section id="about" style={{ padding: '20px 0' }}>
+    <section id="about" >
       <div
         className="home-section"
         style={{
@@ -16,7 +16,7 @@ function About() {
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          padding: '40px 100px',
+          // padding: '40px 100px',
           gap: '50px',
           flexWrap: 'wrap'
         }}
@@ -35,7 +35,7 @@ function About() {
             style={{
               maxWidth: '600px',
               width: '100%',
-              height: '600px',
+              height: '600px',   
               objectFit: "cover"
             }}
           />
@@ -99,3 +99,8 @@ function About() {
 }
 
 export default About;
+
+
+
+
+

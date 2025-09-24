@@ -1,65 +1,64 @@
-
-
 html {
-  scroll-behavior: smooth;padding-top: 100px;
+  scroll-behavior: smooth;
+  /* padding-top: 100px; */
 }
 
+/* ===================== NAV ===================== */
 nav {
-  background-color:snow;
+  background-color: snow;
   padding: 35px;
   display: flex;
   justify-content: space-between;
   align-items: center;
- position: fixed;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1000;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-
 }
+
 nav .nav-links {
   display: flex;
-  gap: 35px; 
+  gap: 35px;
   padding-right: 300px;
 }
 
 nav a {
-
   text-decoration: none;
   color: #333;
-  /* font-weight: bold; */
   font-size: 16px;
   transition: color 0.5s;
 }
 
 nav a:hover {
-  color:#FF7518 ;
+  color: #FF7518;
 }
 
-nav h2{
-  color:black;
+nav h2 {
+  color: black;
   margin: 0;
 }
+
+/* ===================== HOME ===================== */
 .home-section {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 60px 100px;
-  background-color:#FFF0E6;
+  background-color: #FFF0E6;
+    margin-top: 100px;
 }
+
 .home-content {
   flex: 1;
 }
 
 .tagline {
-  color:#FF7518;
-   font-weight: bold;
+  color: #FF7518;
+  font-weight: bold;
   font-size: 14px;
   display: inline-block;
-  
-
- 
 }
 
 .home-content h1 {
@@ -69,8 +68,9 @@ nav h2{
   color: #111;
   margin-bottom: 20px;
 }
+
 .highlight {
-  color:#FF7518;
+  color: #FF7518;
 }
 
 .home-content p {
@@ -80,7 +80,6 @@ nav h2{
   margin-bottom: 30px;
   max-width: 500px;
 }
-
 
 .home-image {
   flex: 1.2;
@@ -92,20 +91,29 @@ nav h2{
   max-width: 450px;
   height: auto;
 }
+
+/* ===================== SERVICES ===================== */
 .services-section {
-   display: grid;
+  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
   padding: 40px 20px;
-  max-width: 900px;   /* isko 1200 se kam kar dein for tighter layout */
-  margin: 0 auto;  
+  max-width: 1020px; /* tighter layout */
+  margin: 0 auto;
 }
 
 .service-card {
-  width: 200px;height: 250px;
-  background:none;
+  /* width: 100%;
+  /* height: auto; */
+  
+    width: 100%;          
+  max-width: 280px;     
+  height: 200px;        
+
+
+  background: none;
   border-radius: 10px;
-   border: 2px solid #FFF0E6; 
+  border: 2px solid #FFF0E6;
   padding: 25px;
   text-align: center;
   transition: 0.3s ease;
@@ -113,7 +121,7 @@ nav h2{
 
 .service-card:hover {
   transform: translateY(-5px);
-  background-color:#FFF0E6 ;
+  background-color: #FFF0E6;
 }
 
 .service-card i {
@@ -134,7 +142,7 @@ nav h2{
   line-height: 1.6;
 }
 
-
+/* ===================== PROJECTS ===================== */
 .projects-section {
   padding: 60px 20px;
   text-align: center;
@@ -142,9 +150,10 @@ nav h2{
 }
 
 .section-title {
+  text-align: center;
   font-size: 36px;
-  margin-bottom: 40px;
-  color: #222;
+  color: #111;
+  margin-bottom: 20px;
 }
 
 .projects-grid {
@@ -158,7 +167,7 @@ nav h2{
 .project-card {
   background: #fff;
   border-radius: 10px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   padding: 20px;
   transition: 0.3s ease;
 }
@@ -168,11 +177,14 @@ nav h2{
 }
 
 .project-img {
-  width: 100%;height: 200px;   image-rendering: -webkit-optimize-contrast;
- image-rendering: crisp-edges;
+
+  width: 100%;        /* card ki width ke hisaab se expand ho */
+  height: 200px;      /* sab images equal height */
+  object-fit: cover;  /* image crop hoke fit ho jaye */
   border-radius: 8px;
   margin-bottom: 15px;
 }
+
 
 .project-card h3 {
   font-size: 20px;
@@ -189,32 +201,27 @@ nav h2{
   display: inline-block;
   margin-top: 8px;
   font-size: 13px;
-  color: #ff7518;
+  color: #FF7518;
   font-weight: bold;
 }
-.section-title {
-  text-align: center;
-  font-size: 36px;
-  color: #111;
-  margin-bottom: 20px;
-}
 
+/* ===================== PARAGRAPH ===================== */
 .paragraph {
- max-width: 750px;
+  max-width: 750px;
   margin: 0 auto;
   text-align: justify;
   font-size: 16px;
   line-height: 1.8;
   color: #444;
-padding: 0 20px;
+  padding: 0 20px;
 }
 
-
+/* ===================== FOOTER ===================== */
 .footer {
   background: #111;
   color: #fff;
   padding: 60px 20px 30px;
-  font-family: sans-serif; 
+  font-family: sans-serif;
 }
 
 .footer-container {
@@ -232,8 +239,8 @@ padding: 0 20px;
 
 .footer-logo {
   font-size: 24px;
-  color: #ff7518;
- margin-bottom: 15px;
+  color: #FF7518;
+  margin-bottom: 15px;
 }
 
 .footer-email {
@@ -242,7 +249,7 @@ padding: 0 20px;
 }
 
 .footer-column h3 {
-  color: #ff7518;
+  color: #FF7518;
   margin-bottom: 10px;
 }
 
@@ -254,9 +261,11 @@ padding: 0 20px;
 .footer-column li {
   margin-bottom: 10px;
 }
-.footer-column li:hover{
-  color:#ff7518
+
+.footer-column li:hover {
+  color: #FF7518;
 }
+
 .social-icons {
   display: flex;
   gap: 15px;
@@ -264,13 +273,17 @@ padding: 0 20px;
 }
 
 .social-icons i {
-  background: #ff7518;
+  background: #FF7518;
   color: #fff;
   padding: 8px;
   border-radius: 50%;
   cursor: pointer;
 }
-.social-icons  :hover{color:#ff7518;}
+
+.social-icons :hover {
+  color: #FF7518;
+}
+
 .footer-bottom {
   text-align: center;
   border-top: 1px solid #333;
@@ -280,25 +293,18 @@ padding: 0 20px;
   color: #bbb;
 }
 
-#home,
-#about,
-#services,
-#projects,
-#contact {
-  scroll-margin-top: 120px; /* jitni tumhare header ki height ho */
-}
-
 .footer a {
-  text-decoration: none; /* removes underline */
-  color: #fff; /* or jo bhi color chahaye */
+  text-decoration: none;
+  color: #fff;
   transition: color 0.3s ease;
 }
 
 .footer a:hover {
-  color: #ff7518; /* hover color */
-  text-decoration: underline; /* optional */
+  color: #FF7518;
+  text-decoration: underline;
 }
 
+/* ===================== BUTTON ===================== */
 button {
   padding: 10px 20px;
   background-color: #FF7518;
@@ -307,18 +313,25 @@ button {
   border-radius: 5px;
   cursor: pointer;
   transition: all 0.3s ease;
-  width: 200px;height: 45px;font-weight: bold;font-size: 18px;margin-left: 20px;
+  width: 200px;
+  height: 45px;
+  font-weight: bold;
+  font-size: 18px;
+  margin-left: 20px;
 }
 
 button:hover {
   background-color: black;
   color: #FF7518;
 }
+
+/* ===================== FEATURES ===================== */
 .features-wrapper {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  grid-template-columns: repeat(2, 1fr);
   gap: 10px;
 }
+
 .feature-item {
   display: flex;
   align-items: center;
@@ -332,10 +345,10 @@ button:hover {
 
 .icon {
   color: #FF7518;
-     margin-right: 10px;
+  margin-right: 10px;
 }
 
-
+/* ===================== INFO & CARDS ===================== */
 .info-section {
   padding: 40px;
   background-color: white;
@@ -356,15 +369,14 @@ button:hover {
   border-radius: 10px;
   width: 320px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  text-align: left;
-  border: 2px solid #FFF0E6; 
- 
+  border: 2px solid #FFF0E6;
   text-align: center;
   transition: 0.3s ease;
 }
+
 .card:hover {
   transform: translateY(-5px);
-  background-color:#FFF0E6 ;
+  background-color: #FFF0E6;
 }
 
 .card h3 {
@@ -373,6 +385,7 @@ button:hover {
   margin-bottom: 15px;
   color: #FF7518;
 }
+
 .item {
   margin-bottom: 20px;
 }
@@ -393,9 +406,8 @@ button:hover {
   color: #555;
   margin-top: 5px;
 }
- 
 
-
+/* ===================== MEDIA QUERIES ===================== */
 @media (max-width: 1024px) {
   nav .nav-links {
     padding-right: 100px;
@@ -412,7 +424,6 @@ button:hover {
   }
 }
 
-/* Mobile (max-width: 768px) */
 @media (max-width: 768px) {
   nav {
     padding: 20px;
@@ -425,7 +436,6 @@ button:hover {
     flex-wrap: wrap;
     margin-top: 10px;
   }
-
   .home-section {
     flex-direction: column;
     text-align: center;
@@ -443,9 +453,8 @@ button:hover {
   .home-image img {
     max-width: 300px;
   }
-
   .services-section {
-    grid-template-columns: 1fr 1fr; /* 2 cards per row */
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
     padding: 30px 15px;
   }
@@ -453,18 +462,15 @@ button:hover {
     width: 100%;
     height: auto;
   }
-
   .projects-grid {
-    grid-template-columns: 1fr; /* single column */
+    grid-template-columns: 1fr;
     gap: 20px;
     padding: 0 15px;
   }
-
   .cards-container {
     flex-direction: column;
     gap: 15px;
   }
-
   .footer-container {
     flex-direction: column;
     text-align: center;
@@ -475,7 +481,6 @@ button:hover {
   }
 }
 
-/* Small Mobile (max-width: 480px) */
 @media (max-width: 480px) {
   nav h2 {
     font-size: 20px;
@@ -483,7 +488,6 @@ button:hover {
   nav a {
     font-size: 14px;
   }
-
   .home-content h1 {
     font-size: 28px;
   }
@@ -494,14 +498,12 @@ button:hover {
     width: 160px;
     font-size: 16px;
   }
-
   .service-card h3 {
     font-size: 16px;
   }
   .service-card p {
     font-size: 13px;
   }
-
   .project-card h3 {
     font-size: 18px;
   }
@@ -509,4 +511,143 @@ button:hover {
     font-size: 14px;
   }
 }
+
+/* ===================== GLOBAL IMG ===================== */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.home-image img
+/* .project-img,
+.about-img */
+ {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+
+
+.footer-column { margin-left:0 }
+@media (min-width:1024px){
+  .footer-column { margin-left:40px; } /* optional for desktop */
+}
+.about-section { padding:40px 20px; }
+@media(min-width:1024px){ .about-section{ padding:40px 100px; } }
+
+#services, #about, #projects,#home {
+   scroll-margin-top: 100px;
+}
+
+@media (max-width: 768px) {
+  #about img {
+    height: 40%;   /* mobile pe choti height */
+    width: 100%;      /* mobile pe width adjust ho jaye */
+  }
+}
+
+/* Tablet view */
+@media (max-width: 768px) {
+  .services-section {
+    grid-template-columns: 1fr 1fr; /* 2 columns tablet pe */
+    gap: 20px;
+  }
+}
+
+/* Mobile view */
+@media (max-width: 480px) {
+  .services-section {
+    grid-template-columns: 1fr; /* single column mobile pe */
+    gap: 15px;
+  }
+}
+@media (max-width: 480px) {
+  .service-card h3 {
+    font-size: 16px;
+  }
+  .service-card p {
+    font-size: 13px;
+  }
+  .service-card svg {
+    width: 30px;
+    height: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .project-img {
+    height: 180px;   /* tablet pe thodi choti height */
+  }
+}
+
+@media (max-width: 480px) {
+  .project-img {
+    height: 150px;   /* mobile pe aur choti height */
+  }
+}
+
+@media (max-width: 1024px) {
+  .cards-container {
+    flex-direction: column;   /* vertical stack */
+    align-items: center;      /* center align cards */
+    gap: 20px;
+    padding: 0 20px;          /* thodi side padding */
+  }
+}
+
+/* Tablet & Mobile adjustments for Details cards */
+@media (max-width: 1024px) {
+  .cards-container {
+    flex-direction: column; /* vertical stack */
+    align-items: center;    /* center align cards */
+    gap: 20px;
+    padding: 0 20px;        /* thodi side padding */
+  }
+
+  .card {
+    width: 100%;            /* full width container ke hisaab se */
+    max-width: 400px;       /* optional max width */
+    margin: 0 auto;         /* center cards horizontally */
+  }
+}
+
+
+@media (max-width: 480px) {
+  .cards-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;      /* horizontal center */
+    justify-content: center;  /* vertical center agar chahiye */
+    gap: 15px;
+    padding: 0;               /* remove extra left/right padding */
+    margin: 0 auto;           /* center container */
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;           /* horizontal center */
+    box-sizing: border-box;   /* padding include ho jaye width me */
+  }
+}
+
+/* Mobile responsive for screens up to 480px */
+@media (max-width: 480px) {
+  .services-section {
+    padding: 20px 10px;
+    gap: 15px;
+    grid-template-columns: 1fr; /* single column */
+    justify-items: center;      /* ye cards ko horizontal center karega */
+  }
+
+  .service-card {
+    max-width: 250px; /* card width */
+    width: 100%;      /* ensure karta hai ke card grid ke andar fit ho */
+    padding: 20px;
+  }
+}
+
 

@@ -7,7 +7,7 @@ import proj5 from './images/Capture.PNG';
 import proj6 from './images/img5.jpeg'
 function Project(){
     return(
-      <section id="projects">
+      <section id="projects" >
         <div>
 <section className="projects-section">
       <h2 className="section-title">MY PROJECTS</h2>

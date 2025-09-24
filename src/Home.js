@@ -6,13 +6,13 @@ import { faUserGear} from '@fortawesome/free-solid-svg-icons';
 
 function Content(){
     return(
-      <section id="home">
+      <section id="home" >
          <div className="home-section">
       <div className="home-content">
        
                 <span className="tagline">
                    <FontAwesomeIcon icon={faUserGear} style={{ marginRight: '10px', color: '#FF7518' }} />
-                  I AM Developer</span>
+                 Creative Web Developer</span>
         <h1>Creative Web Design <br /> & <span className="highlight">Development Solutions</span></h1>
         <p>
           I specialize in building modern, responsive, and user-friendly websites that help businesses grow online.
@@ -34,3 +34,6 @@ function Content(){
     )
 }
 export default Content;
+
+
+

@@ -8,8 +8,8 @@ function Details(){
     <div className="card">
       <h3>Education</h3>
       <div className="item">
-        <h4>BSc in Computer Science</h4>
-        <p><em>University of Sardodha (2020 - 2024)</em></p>
+        <h4>BS in Computer Science</h4>
+<p><em>FAST-NUCES, Islamabad (2020 - 2024)</em></p>
         <p>Focused on web technologies, JavaScript frameworks, and UI design principles.</p>
       </div>
       <div className="item">
@@ -18,8 +18,8 @@ function Details(){
         <p>Studied React, CSS3, HTML5, and modern JavaScript for building responsive web apps.</p>
       </div>
       <div className="item">
-        <h4>High School</h4>
-        <p><em>Sardodha High School (2016 - 2020)</em></p>
+        <h4>Roots Millennium College</h4>
+<p><em>Islamabad, Pakistan (2016 - 2020)</em></p>
         <p>Completed secondary education with emphasis on computer science basics.</p>
       </div>
     </div>

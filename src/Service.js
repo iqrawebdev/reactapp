@@ -9,14 +9,16 @@ import { faTools } from '@fortawesome/free-solid-svg-icons';
 
 function Service(){
     return(
-      <section id='services' style={{ marginTop: '-40px' }}>
+      <section id='services'
+     
+       >
   <div>
     <div style={{ textAlign: "center", padding: "20px" }}>
       <h1 className="tagline">
         <FontAwesomeIcon icon={faTools} style={{ marginRight: '10px', color: '#FF7518' }} />
         My Experties
       </h1>
-      <h1 style={{ fontSize: "45px" }}>SERVICES I OFFER</h1>
+      <h1 style={{ fontSize: "45px" }}>Specialized Services</h1>
       {/* <p>I’m a passionate Web Developer with experience in:</p> */}
     </div>
 
