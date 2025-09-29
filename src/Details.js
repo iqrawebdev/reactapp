@@ -9,7 +9,7 @@ function Details(){
       <h3>Education</h3>
       <div className="item">
         <h4>BS in Computer Science</h4>
-<p><em>FAST-NUCES, Islamabad (2020 - 2024)</em></p>
+<p><em>FAST-NUCES, Islamabad (2016 - 2020)</em></p>
         <p>Focused on web technologies, JavaScript frameworks, and UI design principles.</p>
       </div>
       <div className="item">
@@ -19,7 +19,7 @@ function Details(){
       </div>
       <div className="item">
         <h4>Roots Millennium College</h4>
-<p><em>Islamabad, Pakistan (2016 - 2020)</em></p>
+<p><em>Islamabad, Pakistan (2010 - 2016)</em></p>
         <p>Completed secondary education with emphasis on computer science basics.</p>
       </div>
     </div>
